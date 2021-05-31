@@ -3,6 +3,7 @@
       <style>
           div#menu {
               background: lightblue;
+              position: fixed;
           }
       </style>
   </head>
@@ -18,14 +19,4 @@
    </div>
 
    </body>
-    
-   <script type="text/javascript">
-       var menu = document.getElementById('menu');
-       window.addEventListener('scroll', function(e){
-           menu.style.position = 'absolute';
-           menu.style.left = window.pageXOffset + 'px';
-           menu.style.bottom = document.documentElement.clientHeight - (window.pageYOffset + window.innerHeight) + 'px';
-           menu.style["-webkit-transform"] = "scale(" + window.innerWidth/document.documentElement.clientWidth + ")";
-       });
-    </script>
 </html>
